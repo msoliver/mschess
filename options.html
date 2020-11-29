@@ -4,9 +4,20 @@
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="fa/css/all.min.css" />
     <script src="jquery/dist/jquery.min.js"></script>
-  </head>
+    <script src="chessapi.js"></script>
+    <script src="options.js"></script>
+</head>
   <body>
-      <label>Polling</label>
+      <form style="width: 300px;margin: auto;padding: 30px">
+          <div class="form-group">
+              <label for="username">User name</label>
+              <input type="text" id="UserNameText" class="form-control" placeholder="Enter User name">
+          </div>
+          <div class="form-group">
+              <label for="polling">Polling Interval</label>
+              <input type="number" id="PollingText" class="form-control">
+          </div>
+          <button id="ApplyBtn" class="btn btn-primary">Apply</button>
+      </form>
   </body>
-  <script src="options.js"></script>
 </html>
