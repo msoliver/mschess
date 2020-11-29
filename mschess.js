@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(function() {
-    chrome.alarms.create('games', { delayInMinutes: 0.2});
+    chrome.alarms.create('games', { periodInMinutes: 1});
 });
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
